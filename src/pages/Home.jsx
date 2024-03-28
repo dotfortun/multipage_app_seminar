@@ -28,24 +28,19 @@ function Home() {
             <li>View details about individual books.</li>
             <li>Add and remove your favorite books from your library.</li>
           </ul>
-          <p>
-            To that end, there&apos;s some non-functional routes set up already:
-          </p>
+          <p>Todo (for later):</p>
           <ul>
             <li>
-              <span className="code">
-                <a href="/library">/library</a>
-              </span>
-              , which is where we will be able to interact with our library.
+              Fix the bug where removing books while at{" "}
+              <span className="code">/library</span>
+              doesn&apos;t appear to actually remove the book.
             </li>
+            <li>Add a loading screen while the search results are loading.</li>
             <li>
-              <span className="code">
-                <a href="/book">/book</a>
-              </span>
-              , which is where we will be able to interact with individual
-              books. This one needs the most work, because we want to have URLs
-              for every book, e.g.:{" "}
-              <span className="code">/books/some_book_id</span>.
+              Either make the search field take you to{" "}
+              <span className="code">/</span>
+              when you aren&apos;t on the home page, or find a better search
+              page solution thing.
             </li>
           </ul>
         </>

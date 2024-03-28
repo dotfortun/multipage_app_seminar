@@ -54,6 +54,7 @@ const useBookStore = create(
       getBooksBySearch: async () => {
         // We set is_loading to true here so we can disable the search button.
         set({ is_loading: true });
+        set({ search_results: [] });
 
         // Here we make an API request to openlibrary.org with our search query.
         const resp = await fetch(

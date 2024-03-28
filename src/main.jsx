@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
+import Library from "./pages/Library.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 
 import "./index.css";
+import BookPage from "./pages/BookPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,11 +16,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/library",
-    element: <h1>The Library Should Go Here</h1>,
+    element: <Library />,
   },
   {
-    path: "/book",
-    element: <h1>Book Detail Pages Go Here-ish</h1>,
+    path: "/book/:olid",
+    element: <BookPage />,
   },
   {
     path: "/book/*",
